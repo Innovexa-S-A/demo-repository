@@ -1,0 +1,18 @@
+name: Merge integraton with deploy
+on:
+  push:
+    branches:
+      - integration
+jobs:
+  merge-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: integration
+      - name: Merge staging -> uat
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          target_branch: deploy
+          github_token: ${{ secrets.GITHUB_TOKEN }}
