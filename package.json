@@ -3,7 +3,21 @@
   "version": "0.2.0",
   "description": "A sample package.json",
   "dependencies": {
-    "@primer/css": "17.0.1"
+    "@primer/css": "17.0.1",
+    "express": "^4.18.2"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Innovexa-S-A/demo-repository.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Innovexa-S-A/demo-repository/issues"
+  },
+  "homepage": "https://github.com/Innovexa-S-A/demo-repository#readme"
 }
