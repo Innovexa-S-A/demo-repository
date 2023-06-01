@@ -3,7 +3,7 @@ const app = express()
 const PORT = 3001
 
 app.get('/', (request, response) => {
-    response.send('<h1>Hola Innovexa 2023</h1>')
+    response.send('<h1>Bienvenidos Innovexa</h1>')
   })
 
 app.listen(PORT, () => {
